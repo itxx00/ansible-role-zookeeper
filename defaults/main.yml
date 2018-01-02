@@ -1,0 +1,17 @@
+---
+
+zookeeper_group: zookeeper
+zookeeper_user: zookeeper
+
+# Variables for templating zookeeper.conf.j2
+zookeeper_log_dir: /var/log/zookeeper
+zookeeper_data_dir: /data/zookeeper
+zookeeper_data_log_dir: /data/zookeeper
+zookeeper_client_port: 2181
+
+# Uniquely identifies the ZooKeeper instance when clustering ZooKeeper nodes.
+# This value is placed in the /data/zookeeper/myid file.
+zookeeper_id: -1
+
+zookeeper_leader_port: 2888
+zookeeper_election_port: 3888
